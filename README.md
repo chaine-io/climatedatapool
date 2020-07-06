@@ -12,4 +12,4 @@ Our objective with this project is to build a running Proof of Concept of an IPF
 ### Process Flow Diagram
 Below is a high level process flow diagram delinating the stakeholders and infrastructure.
 
-![Process Flow](https://github.com/chaine-io/chaine/blob/master/sandbox/process_flow_diagram.png?raw=true "Process Flow Diagram")
+![Process Flow](https://github.com/chaine-io/climatedatapool/blob/master/sandbox/process_flow_diagram.png?raw=true "Process Flow Diagram")
