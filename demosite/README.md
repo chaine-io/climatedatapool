@@ -1,2 +1,2 @@
 # Demo site folder
-This is used as the publishing base. 
+This folder is the publishing base. 
