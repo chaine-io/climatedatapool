@@ -1915,6 +1915,13 @@ h1 {
 h2 {
   font-size: 1.7em;
 }
+p.textual {
+  width: 600px;
+  color: #333;
+}
+p.textual a:visited, ul.textual li a:visited {
+  color: #00f
+}
 a.noformat:link {
   text-decoration: none;
   color:#2e4e72;
@@ -2062,11 +2069,57 @@ span.message {
 <p></p>
 <p></p>
 <h3 class="MuiTypography-h2 MuiTypography-root jss854">Your team's latest submissions</h3>
-<p>Table</p>
+<style type="text/css">
+.listing  {border-collapse:collapse;border-spacing:0;width:600px;margin-top:9px}
+.listing th{border:1px #2e4e72 solid;font-size:14px;color:#888;
+  font-weight:normal;overflow:hidden;padding:5px 5px;word-break:normal;}
+.listing td{border:1px #2e4e72 solid;font-size:14px;
+  overflow:hidden;padding:5px 5px;word-break:normal;}
+.listing .cell{text-align:left;vertical-align:top}
+.listing th.date {width:96px}
+</style>
+<table class="listing">
+<thead>
+  <tr>
+    <th class="cell">Icon</th>
+    <th class="cell title">Title</th>
+    <th class="cell">Doctype</th>
+    <th class="cell date">Date</th>
+    <th class="cell">Action</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="cell"><img style="height:20px; margin-left:7px" src="https://unfccc.int/themes/custom/unfccc/img/icons/pdf-icon.svg" alt="" typeof="foaf:Image" class="img-responsive"></td>
+    <td class="cell"><abbr title="Technical analysis of the third biennial update report of Singapore submitted on 27 December 2018. Summary report by the team of technical experts">Technical analysis of the third biennial...</abbr></td>
+    <td class="cell">TASR</td>
+    <td class="cell">16 Jan 2020</td>
+    <td class="cell"><a href="#">View</a></td>
+  </tr>
+  <tr>
+    <td class="cell"><img style="height:20px; margin-left:7px" src="https://unfccc.int/themes/custom/unfccc/img/icons/pdf-icon.svg" alt="" typeof="foaf:Image" class="img-responsive"></td>
+    <td class="cell"><abbr title="Singapore - High-level Segment Statement COP 25">Singapore - High-level Segment Statement</abbr></td>
+    <td class="cell">Statements</td>
+    <td class="cell">10 Dec 2019</td>
+    <td class="cell"><a href="#">View</a></td>
+  </tr>
+  <!--<tr>
+    <td class="cell"><img src="https://unfccc.int/themes/custom/unfccc/img/icons/pdf-icon.svg" alt="" typeof="foaf:Image" class="img-responsive"></td>
+    <td class="cell">Study on cooperative MRV as a foundation for a potential regional carbon market within ASEAN...</td>
+    <td class="cell">Reports</td>
+    <td class="cell">22 May 2019</td>
+    <td class="cell"><a href="#">View</a></td>
+  </tr>-->
+</tbody>
+</table>
 <p></p>
 
-<h2 class="" style="margin-block-end: 0em;">Associate sites with data visualizations</h2>
+<h2 class="" style="margin-block-end: 0em;">Visit associate sites with data visualizations</h2>
 <p class="MuiTypography-root jss855 MuiTypography-body1">Researchers have analyzed climate data in illuminating charts and graphs.</p>
+<ul class="textual" style="margin-top:0"></a>
+  <li><a href="https://www.pik-potsdam.de/research/climate-resilience/models">PIK, the Potsdam Institute for Climate Impact Research</a></li>
+  <li><a href="https://climateactiontracker.org/">Climate Action Tracker</a></li>
+</ul>
 
 <div class="jss857">
 <!--<p class="MuiTypography-root jss856 MuiTypography-body1">Select file</p><p class="MuiTypography-root jss855 MuiTypography-body1">For multiple files please upload a zip archive.</p>
