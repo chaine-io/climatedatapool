@@ -1910,17 +1910,20 @@ label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::
 </style>
 <style data-jss="" data-meta="theCSSisamess">
 h1 {
-  font-size: 2.2em;
+  font-size:2.2em;
+  margin-bottom:15px;
 }
 h2 {
-  font-size: 1.7em;
+  font-size:1.7em;
+  margin-top:1px;
+  margin-bottom:1px;
 }
 p.textual {
-  width: 600px;
-  color: #333;
+  width:600px;
+  color:#333;
 }
 p.textual a:visited, ul.textual li a:visited {
-  color: #00f
+  color:#00f
 }
 a.noformat:link {
   text-decoration: none;
@@ -1935,15 +1938,48 @@ a.noformat:hover {
   color:#2e4e72;
 }
 a.message {
-  margin-left: 0;
+  margin-left:0;
   width:50%;
-  padding-left: 9px;
+  padding-left:9px;
   border: 1px #2e4e72 solid;
   color:#2e4e72;
-  background-color: #e4f1fc;
+  background-color:#e4f1fc;
 }
 span.message {
-  font-size: 1.0125rem;
+  font-size:1.0125rem;
+}
+table.listing {
+  border-collapse:collapse;
+  border-spacing:0;
+  width:600px;
+  margin-top:9px
+}
+table.listing th {
+  border:1px #2e4e72 solid;
+  color:#888;
+  font-weight:normal;
+  overflow:hidden;
+  padding:5px 5px;
+  word-break:normal;
+}
+table.listing td {
+  border:1px #2e4e72 solid;
+  overflow:hidden;
+  padding:5px 5px;
+  word-break:normal;
+}
+table.listing .cell {
+  text-align:left;
+  vertical-align:top;
+}
+table.listing th.date {width:96px}
+/* overrides */
+.jss138 {
+  color:#2e4e72;
+  background-color: #edf5fc;
+}
+.jss140 {
+  background-color: #2e4e72;
 }
 </style>
 </head>
@@ -1968,16 +2004,25 @@ span.message {
 </div><input type="hidden" value="[object Object]"><svg class="MuiSvgIcon-root MuiSelect-icon jss63" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg><fieldset aria-hidden="true" style="padding-left: 8px;" class="jss125 MuiOutlinedInput-notchedOutline jss56"><legend class="jss126" style="width: 0.01px;"><span>​</span></legend></fieldset>
 </div>
 </div>
-</div><nav class="jss129"><ul class="jss130" style="top: 0px;">
-<div id="test-sidebar-sites"><li class="jss133"><a class="jss134 jss138" href="overview.html">
+</div>
+<nav class="jss129">
+<ul class="jss130" style="top: 0px;">
+<!-- menu item 1 -->
+<div id="test-sidebar-sites">
+<li class="jss133">
+<a class="jss134 jss138" href="overview.html">
+<div class="jss140"><!-- marker, jss138 is bg --></div>
 <div class="jss135">
 <div class="jss144   jss834">
 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="window" class="svg-inline--fa fa-window fa-w-16 jss145 font-size--reset  " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M96 160c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-32c0-17.7-14.3-32-32-32s-32 14.3-32 32 14.3 32 32 32 32-14.3 32-32zm96 0c0-17.7-14.3-32-32-32s-32 14.3-32 32 14.3 32 32 32 32-14.3 32-32zm192-48v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48zm-32 144H32v208c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16V224zm0-32V80c0-8.8-7.2-16-16-16H48c-8.8 0-16 7.2-16 16v112h448z"></path>
 </svg>
 </div>
-</div><span class="MuiTypography-root MuiTypography-caption MuiTypography-colorInherit">Overview</span></a></li>
+</div><span class="MuiTypography-root jss141 MuiTypography-caption MuiTypography-colorInherit">Overview</span></a></li>
 </div>
-<div id="test-sidebar-storage"><li class="jss133"><a class="jss134" href="files.html">
+<!-- menu item 2 -->
+<div id="test-sidebar-storage">
+<li class="jss133">
+<a class="jss134" href="files.html">
 <div class="jss135">
 <div class="jss144   jss836">
 <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="hdd" class="svg-inline--fa fa-hdd fa-w-18 jss145 font-size--reset  " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M566.819 227.377L462.377 83.768A48.001 48.001 0 0 0 423.557 64H152.443a47.998 47.998 0 0 0-38.819 19.768L9.181 227.377A47.996 47.996 0 0 0 0 255.609V400c0 26.51 21.49 48 48 48h480c26.51 0 48-21.49 48-48V255.609a47.996 47.996 0 0 0-9.181-28.232zM139.503 102.589A16.048 16.048 0 0 1 152.443 96h271.115c5.102 0 9.939 2.463 12.94 6.589L524.796 224H51.204l88.299-121.411zM544 272v128c0 8.823-7.178 16-16 16H48c-8.822 0-16-7.177-16-16V272c0-8.837 7.163-16 16-16h480c8.837 0 16 7.163 16 16zm-56 64c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24zm-64 0c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z"></path>
@@ -1985,20 +2030,23 @@ span.message {
 </div>
 </div><span class="MuiTypography-root MuiTypography-caption MuiTypography-colorInherit">Files Listing</span><!--<p class="MuiTypography-root jss142 MuiTypography-body1">Beta</p>--></a></li>
 </div>
-<div id="test-sidebar-billing"><li class="jss133"><a class="jss134 " href="upload.html">
+<!-- menu item 3 -->
+<div id="test-sidebar-billing">
+<li class="jss133">
+<a class="jss134 " href="upload.html">
 <div class="jss135">
 <div class="jss144   jss836"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="credit-card" class="svg-inline--fa fa-credit-card fa-w-18 jss145 font-size--reset  " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM48 64h480c8.8 0 16 7.2 16 16v48H32V80c0-8.8 7.2-16 16-16zm480 384H48c-8.8 0-16-7.2-16-16V224h512v208c0 8.8-7.2 16-16 16zm-336-84v8c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v8c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"></path></svg>
 </div>
 </div><span class="MuiTypography-root MuiTypography-caption MuiTypography-colorInherit">Upload</span></a></li>
 </div>
-<div id="test-sidebar-members"><li class="jss133">
+<!-- menu item 4 -->
+<div id="test-sidebar-members">
+<li class="jss133">
 <a class="jss134" href="team.html">
-<div class="jss140">
-</div>
 <div class="jss135">
 <div class="jss144   jss837"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="user-friends" class="svg-inline--fa fa-user-friends fa-w-20 jss145 font-size--reset  " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm0-160c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zM192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm0-192c44.1 0 80 35.9 80 80s-35.9 80-80 80-80-35.9-80-80 35.9-80 80-80zm80.1 212c-33.4 0-41.7 12-80.1 12-38.4 0-46.7-12-80.1-12-36.3 0-71.6 16.2-92.3 46.9C7.2 341.3 0 363.4 0 387.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-44.8c0-23.8-7.2-45.9-19.6-64.3-20.7-30.7-56-46.9-92.3-46.9zM352 432c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16v-44.8c0-16.6 4.9-32.7 14.1-46.4 13.8-20.5 38.4-32.8 65.7-32.8 27.4 0 37.2 12 80.2 12s52.8-12 80.1-12c27.3 0 51.9 12.3 65.7 32.8 9.2 13.7 14.1 29.8 14.1 46.4V432zm271.7-114.9C606.4 291.5 577 278 546.8 278c-27.8 0-34.8 10-66.8 10s-39-10-66.8-10c-13.2 0-26.1 3-38.1 8.1 15.2 15.4 18.5 23.6 20.2 26.6 5.7-1.6 11.6-2.6 17.9-2.6 21.8 0 30 10 66.8 10s45-10 66.8-10c21 0 39.8 9.3 50.4 25 7.1 10.5 10.9 22.9 10.9 35.7V408c0 4.4-3.6 8-8 8H416c0 17.7.3 22.5-1.6 32H600c22.1 0 40-17.9 40-40v-37.3c0-19.9-6-38.3-16.3-53.6z"></path></svg>
 </div>
-</div><span class="MuiTypography-root jss141 MuiTypography-caption MuiTypography-colorInherit">Team</span></a></li>
+</div><span class="MuiTypography-root MuiTypography-caption MuiTypography-colorInherit">Team</span></a></li>
 </div></ul>
 </nav>
 <!--<a target="_blank" rel="noopener noreferrer" href="https://docs.fleek.co/storage/fleek-storage-js" class="jss151 jss50"><span class="MuiTypography-root MuiTypography-caption MuiTypography-colorInherit MuiTypography-displayInline">Get the App</span>
@@ -2051,7 +2099,7 @@ span.message {
 </div><p class="MuiTypography-root jss866 MuiTypography-body2">Back</p></span><span class="MuiTouchRipple-root"></span></button>-->
 <div class="jss206 jss867 jss863">
 <h1>Welcome to ClimateDataPool</h1>
-<h2 class="" style="margin-block-end: 0em;">What would you like to do today?</h2>
+<h2 class="" style="">What would you like to do today?</h2>
 <p class="MuiTypography-root jss855 MuiTypography-body1">Below are a series of options. Team settings are bottom left.</p>
 <p></p>
 <p></p>
@@ -2065,19 +2113,10 @@ span.message {
 <p></p>
 <p></p>
 <h3 class="MuiTypography-h2 MuiTypography-root jss854 "><a class="noformat" href="team">Manage or message your team</a></h3>
-<p class="MuiTypography-root jss855 MuiTypography-body1">Communicate with team members remotely, add or remove team members.</p>
+<p class="MuiTypography-root jss855 MuiTypography-body1">Communicate with team members remotely, add or remove users.</p>
 <p></p>
 <p></p>
 <h3 class="MuiTypography-h2 MuiTypography-root jss854">Your team's latest submissions</h3>
-<style type="text/css">
-.listing  {border-collapse:collapse;border-spacing:0;width:600px;margin-top:9px}
-.listing th{border:1px #2e4e72 solid;font-size:14px;color:#888;
-  font-weight:normal;overflow:hidden;padding:5px 5px;word-break:normal;}
-.listing td{border:1px #2e4e72 solid;font-size:14px;
-  overflow:hidden;padding:5px 5px;word-break:normal;}
-.listing .cell{text-align:left;vertical-align:top}
-.listing th.date {width:96px}
-</style>
 <table class="listing">
 <thead>
   <tr>
@@ -2085,14 +2124,14 @@ span.message {
     <th class="cell title">Title</th>
     <th class="cell">Doctype</th>
     <th class="cell date">Date</th>
-    <th class="cell">Action</th>
+    <th class="cell action">Action</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="cell"><img style="height:20px; margin-left:7px" src="https://unfccc.int/themes/custom/unfccc/img/icons/pdf-icon.svg" alt="" typeof="foaf:Image" class="img-responsive"></td>
     <td class="cell"><abbr title="Technical analysis of the third biennial update report of Singapore submitted on 27 December 2018. Summary report by the team of technical experts">Technical analysis of the third biennial...</abbr></td>
-    <td class="cell">TASR</td>
+    <td class="cell"><abbr title="Technical analusis summary report">TASR</abbr></td>
     <td class="cell">16 Jan 2020</td>
     <td class="cell"><a href="#">View</a></td>
   </tr>
@@ -2114,8 +2153,8 @@ span.message {
 </table>
 <p></p>
 
-<h2 class="" style="margin-block-end: 0em;">Visit associate sites with data visualizations</h2>
-<p class="MuiTypography-root jss855 MuiTypography-body1">Researchers have analyzed climate data in illuminating charts and graphs.</p>
+<h2 class="" style="margin-top:24px;">Visit associate sites with data visualizations</h2>
+<p class="MuiTypography-root jss855 MuiTypography-body1 textual">Researchers analyzed your climate data in illuminating charts and graphs. See:</p>
 <ul class="textual" style="margin-top:0"></a>
   <li><a href="https://www.pik-potsdam.de/research/climate-resilience/models">PIK, the Potsdam Institute for Climate Impact Research</a></li>
   <li><a href="https://climateactiontracker.org/">Climate Action Tracker</a></li>
