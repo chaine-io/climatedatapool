@@ -1969,7 +1969,35 @@ table.listing .cell {
   text-align:left;
   vertical-align:top;
 }
-table.listing th.date {width:96px}
+table.listing th.date {
+  width:96px;
+}
+div.search {
+  width:600px;
+  margin:8px 0 0 0;
+}
+a.action {
+  height:28px;
+  margin:5px 0 0 0;
+  border:1px #2e4e72 solid;
+  color:#2e4e72;
+  background-color:#d3f3ff;
+}
+span.action {
+  font-weight:500;
+}
+input.formfield, select.formfield {
+  height:30px;
+  margin:0;
+  padding: 5px 10px;
+  border: 1px #c9c8c9 solid;
+  border-radius 4px;
+  font-size:16px;
+}
+textarea.formfield {
+  font-size:16px;
+}
+
 /* overrides */
 .jss138 {
   color:#2e4e72;
@@ -2028,11 +2056,14 @@ table.listing th.date {width:96px}
 </div>
 </div><span class="MuiTypography-root jss141 MuiTypography-caption MuiTypography-colorInherit">Upload</span></a></li>
 </div>
-<div id="test-sidebar-members"><li class="jss133"><a class="jss134" href="team.html">
+<!-- menu item 3 -->
+<div id="test-sidebar-members">
+<li class="jss133">
+<a class="jss134" href="team.html">
 <div class="jss135">
 <div class="jss144   jss837"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="user-friends" class="svg-inline--fa fa-user-friends fa-w-20 jss145 font-size--reset  " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm0-160c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zM192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm0-192c44.1 0 80 35.9 80 80s-35.9 80-80 80-80-35.9-80-80 35.9-80 80-80zm80.1 212c-33.4 0-41.7 12-80.1 12-38.4 0-46.7-12-80.1-12-36.3 0-71.6 16.2-92.3 46.9C7.2 341.3 0 363.4 0 387.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-44.8c0-23.8-7.2-45.9-19.6-64.3-20.7-30.7-56-46.9-92.3-46.9zM352 432c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16v-44.8c0-16.6 4.9-32.7 14.1-46.4 13.8-20.5 38.4-32.8 65.7-32.8 27.4 0 37.2 12 80.2 12s52.8-12 80.1-12c27.3 0 51.9 12.3 65.7 32.8 9.2 13.7 14.1 29.8 14.1 46.4V432zm271.7-114.9C606.4 291.5 577 278 546.8 278c-27.8 0-34.8 10-66.8 10s-39-10-66.8-10c-13.2 0-26.1 3-38.1 8.1 15.2 15.4 18.5 23.6 20.2 26.6 5.7-1.6 11.6-2.6 17.9-2.6 21.8 0 30 10 66.8 10s45-10 66.8-10c21 0 39.8 9.3 50.4 25 7.1 10.5 10.9 22.9 10.9 35.7V408c0 4.4-3.6 8-8 8H416c0 17.7.3 22.5-1.6 32H600c22.1 0 40-17.9 40-40v-37.3c0-19.9-6-38.3-16.3-53.6z"></path></svg>
 </div>
-</div><span class="MuiTypography-root MuiTypography-caption MuiTypography-colorInherit">Team</span></a></li>
+</div><span class="MuiTypography-root jss141 MuiTypography-caption MuiTypography-colorInherit">Team</span></a></li>
 </div></ul></nav>
 <!--<a target="_blank" rel="noopener noreferrer" href="https://docs.fleek.co/storage/fleek-storage-js" class="jss151 jss50"><span class="MuiTypography-root MuiTypography-caption MuiTypography-colorInherit MuiTypography-displayInline">Get the App</span>
 <div class="jss144   jss838"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="long-arrow-right" class="svg-inline--fa fa-long-arrow-right fa-w-14 jss145 font-size--reset  " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M295.515 115.716l-19.626 19.626c-4.753 4.753-4.675 12.484.173 17.14L356.78 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h344.78l-80.717 77.518c-4.849 4.656-4.927 12.387-.173 17.14l19.626 19.626c4.686 4.686 12.284 4.686 16.971 0l131.799-131.799c4.686-4.686 4.686-12.284 0-16.971L312.485 115.716c-4.686-4.686-12.284-4.686-16.97 0z"></path></svg>
@@ -2086,20 +2117,58 @@ table.listing th.date {width:96px}
 <div class="jss206 jss867 jss863">
 <h2>Add documents to the repository</h2>
 <p class="MuiTypography-root jss855 MuiTypography-body1">We will notify you when uploads have been processed.</p>
-<div class="jss857"><p class="MuiTypography-root jss856 MuiTypography-body1">Select file</p><p class="MuiTypography-root jss855 MuiTypography-body1">For multiple files please upload a zip archive.</p>
-<div class="jss868">
-<div class="MuiFormControl-root MuiTextField-root jss869 jss858">
-<label class="MuiFormLabel-root MuiInputLabel-root jss872 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined jss873" data-shrink="false">  </label>
-<div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
-<input aria-invalid="false" type="file" class="MuiInputBase-input MuiOutlinedInput-input jss870">
-<fieldset aria-hidden="true" class="jss125 MuiOutlinedInput-notchedOutline">
-<legend class="jss127"><span>File or zip archive</span></legend>
-</fieldset>
+<!-- Input fieldset -->
+<div class="jss857">
+  <p class="MuiTypography-root jss856 MuiTypography-body1">Select file</p><p class="MuiTypography-root jss855 MuiTypography-body1">For multiple files please upload a zip archive.</p>
+  <div class="jss868">
+    <div class="MuiFormControl-root MuiTextField-root jss869 jss858">
+      <label class="MuiFormLabel-root MuiInputLabel-root jss872 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined jss873" data-shrink="false">  </label>
+      <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+        <input aria-invalid="false" type="file" class="MuiInputBase-input MuiOutlinedInput-input jss870">
+        <fieldset aria-hidden="true" class="jss125 MuiOutlinedInput-notchedOutline">
+          <legend class="jss127"><span>File or zip archive</span></legend>
+        </fieldset>
+      </div>
+    </div>
+  </div>
 </div>
-</div><p class="MuiTypography-root jss871 MuiTypography-body1"></p>
+<!-- Input fieldset -->
+<div class="jss857">
+  <p class="MuiTypography-root jss856 MuiTypography-body1">Title</p><p class="MuiTypography-root jss855 MuiTypography-body1">Titles longer than 140 chars will be truncated.</p>
+  <div class="jss868">
+    <div class="MuiFormControl-root MuiTextField-root jss869 jss858">
+      <label class="MuiFormLabel-root MuiInputLabel-root jss872 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined jss873" data-shrink="false">  </label>
+      <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+        <textarea style="height:80px; font-size:16px;" aria-invalid="false" rows="2" class="MuiInputBase-input MuiOutlinedInput-input jss870" placeholder="Document title"></textarea>
+        <fieldset aria-hidden="true" class="jss125 MuiOutlinedInput-notchedOutline">
+          <legend class="jss127"><span>Document title</span></legend>
+        </fieldset>
+      </div>
+    </div>
+  </div>
 </div>
+<!-- Input fieldset -->
+<div class="jss857">
+  <p class="MuiTypography-root jss856 MuiTypography-body1">Document type</p><p class="MuiTypography-root jss855 MuiTypography-body1">When unsure choose Reports.</p>
+  <div class="jss868">
+    <div class="MuiFormControl-root MuiTextField-root jss869 jss858">
+      <label class="MuiFormLabel-root MuiInputLabel-root jss872 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined jss873" data-shrink="false">  </label>
+      <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+        <select class="formfield" name="doctype" style="height:40px; width:100%">
+          <option value="volvo">Reports</option>
+          <option value="saab">Statements</option>
+          <option value="mercedes">National Communications (NC)</option>
+          <option value="audi">Technical analysis summary report (TASR)</option>
+        </select>
+        <fieldset aria-hidden="true" class="jss125 MuiOutlinedInput-notchedOutline">
+          <legend class="jss127"><span>Document type</span></legend>
+        </fieldset>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="jss219"><div class="jss220"><button class="MuiButtonBase-root MuiButton-root jss223 jss225 jss222 MuiButton-contained" tabindex="0" type="button"><span class="MuiButton-label"><div class="jss221"><div class="jss144   " style="width:100px; font-size:16px"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="upload" class="svg-inline--fa fa-upload fa-w-16 jss145 font-size--reset  " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M452 432c0 11-9 20-20 20s-20-9-20-20 9-20 20-20 20 9 20 20zm-84-20c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20zm144-48v104c0 24.3-19.7 44-44 44H44c-24.3 0-44-19.7-44-44V364c0-24.3 19.7-44 44-44h124v-99.3h-52.7c-35.6 0-53.4-43.1-28.3-68.3L227.7 11.7c15.6-15.6 40.9-15.6 56.6 0L425 152.4c25.2 25.2 7.3 68.3-28.3 68.3H344V320h124c24.3 0 44 19.7 44 44zM200 188.7V376c0 4.4 3.6 8 8 8h96c4.4 0 8-3.6 8-8V188.7h84.7c7.1 0 10.7-8.6 5.7-13.7L261.7 34.3c-3.1-3.1-8.2-3.1-11.3 0L109.7 175c-5 5-1.5 13.7 5.7 13.7H200zM480 364c0-6.6-5.4-12-12-12H344v24c0 22.1-17.9 40-40 40h-96c-22.1 0-40-17.9-40-40v-24H44c-6.6 0-12 5.4-12 12v104c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12V364z"></path></svg><span> Upload</span></div></div></span><span class="MuiTouchRipple-root"></span></button>
+<p class="MuiTypography-root jss871 MuiTypography-body1">&nbsp;</p>
+<div class="jss219" style="margin-top:16px;"><div class="jss220"><button class="MuiButtonBase-root MuiButton-root jss223 jss225 jss222 MuiButton-contained" tabindex="0" type="button"><span class="MuiButton-label"><div class="jss221"><div class="jss144   " style="width:100px; font-size:16px"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="upload" class="svg-inline--fa fa-upload fa-w-16 jss145 font-size--reset  " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M452 432c0 11-9 20-20 20s-20-9-20-20 9-20 20-20 20 9 20 20zm-84-20c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20zm144-48v104c0 24.3-19.7 44-44 44H44c-24.3 0-44-19.7-44-44V364c0-24.3 19.7-44 44-44h124v-99.3h-52.7c-35.6 0-53.4-43.1-28.3-68.3L227.7 11.7c15.6-15.6 40.9-15.6 56.6 0L425 152.4c25.2 25.2 7.3 68.3-28.3 68.3H344V320h124c24.3 0 44 19.7 44 44zM200 188.7V376c0 4.4 3.6 8 8 8h96c4.4 0 8-3.6 8-8V188.7h84.7c7.1 0 10.7-8.6 5.7-13.7L261.7 34.3c-3.1-3.1-8.2-3.1-11.3 0L109.7 175c-5 5-1.5 13.7 5.7 13.7H200zM480 364c0-6.6-5.4-12-12-12H344v24c0 22.1-17.9 40-40 40h-96c-22.1 0-40-17.9-40-40v-24H44c-6.6 0-12 5.4-12 12v104c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12V364z"></path></svg><span> Upload</span></div></div></span><span class="MuiTouchRipple-root"></span></button>
 <!--<button class="MuiButtonBase-root MuiButton-root jss209 jss211 jss208 MuiButton-contained jss859 MuiButton-containedPrimary  jss215 jss216 " tabindex="-1" type="button" ><span class="MuiButton-label"><p class="MuiTypography-root MuiTypography-body2">Upload File</p></span></button>-->
 </div>
 </div>
