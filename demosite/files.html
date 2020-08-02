@@ -1972,7 +1972,34 @@ table.listing .cell {
   text-align:left;
   vertical-align:top;
 }
-table.listing th.date {width:96px}
+table.listing th.date {
+  width:96px;
+}
+div.search {
+  width:600px;
+  margin:8px 0 0 0;
+}
+a.action {
+  height:28px;
+  margin:5px 0 0 0;
+  border:1px #2e4e72 solid;
+  color:#2e4e72;
+  background-color:#d3f3ff;
+}
+span.action {
+  font-weight:500;
+}
+input.formfield, select.formfield {
+  height:30px;
+  margin:0;
+  padding: 5px 10px;
+  border: 1px #c9c8c9 solid;
+  border-radius 4px;
+  font-size:16px;
+}
+textarea.formfield {
+  font-size:16px;
+}
 /* overrides */
 .jss138 {
   color:#2e4e72;
@@ -2099,38 +2126,21 @@ table.listing th.date {width:96px}
 </div><p class="MuiTypography-root jss866 MuiTypography-body2">Back</p></span><span class="MuiTouchRipple-root"></span></button>
 <div class="jss206 jss867 jss863">
 <h2 class="" style="">Files Listing</h2>
-<p class="MuiTypography-root jss855 MuiTypography-body1">All your team's files are listed here. Toggle the filters to refine the search.</p>
+<p class="MuiTypography-root jss855 MuiTypography-body1">All your team's files are listed here. Toggle the filters to customize the search.</p>
 <h4 class="MuiTypography-root jss856" style="margin-top:10px">Search and filter</h4>
 <p class="MuiTypography-root jss855 MuiTypography-body1">Use quotation marks to search for "an exact phrase”.</p>
 <div class="search">
   <form class="views-form" style="" action="/documents" method="get" id="search-form-documents" accept-charset="UTF-8">
     <div class="form-actions" id="form-actions" style="float:right; margin-bottom:5px">
-      <button class="button" style="width:100px; height:30px; font-size:16px" type="submit" id="edit-submit-documents" value="Search" name=""><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>Search</button>
+      <button class="button" style="width:100px; height:40px; font-size:16px;   color:#2e4e72" type="submit" id="edit-submit-documents" value="Search" name=""><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>Search</button>
     </div>
-    <div class="form-inline clearfix" style="float:left; margin-bottom:5px">
-      <input class="form-control" style="height:30px; font-size:16px" type="text" id="edit-search3" name="search3" value="" size="59" maxlength="128" placeholder="Search all documents">&nbsp;
+    <div class="form-inline clearfix" style="margin-bottom:5px">
+      <input class="MuiInputBase-input MuiFormControl-root MuiTextField-root jss869 jss858 formfield" style="width:470px" type="text" id="edit-search3" name="search3" value="" size="50" maxlength="128" placeholder="Search all documents">
     </div>
   </form>
-<p class="MuiTypography-root jss855 MuiTypography-body1 " style="margin-top:10px; text-align:right;"><a class="textual" href="#">Toggle filters</a></p>
+<p class="MuiTypography-root jss855 MuiTypography-body1 textual" style="margin-top:5px; text-align:right;"><a href="#">Toggle filters</a></p>
 </div>
-<h3 class="MuiTypography-h2 MuiTypography-root jss854">Your team's submissions</h3>
-<style>
-a.action {
-  height:28px;
-  margin:5px 0 0 0;
-  border:1px #2e4e72 solid;
-  color:#2e4e72;
-  background-color:#d3f3ff;
-}
-span.action {
-  margin:0;
-  font-weight:500;
-}
-div.search {
-  width:600px;
-  margin:8px 0 2px 0;
-}
-</style>
+<h3 class="MuiTypography-h2 MuiTypography-root jss854 clearfix" style="float:none">Your team's submissions</h3>
 <table class="listing">
 <thead>
   <tr>
