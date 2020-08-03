@@ -1918,8 +1918,13 @@ h2 {
   margin-top:1px;
   margin-bottom:1px;
 }
-h3 {
-  font-size:1.4em;
+h3.textual {
+  font-size:1.6em;
+  margin-top:1px;
+  margin-bottom:4px;
+}
+h4.textual {
+  font-size:1.2em;
   margin-top:1px;
   margin-bottom:1px;
 }
@@ -2066,27 +2071,27 @@ span.message {
 <p class="MuiTypography-root jss855 MuiTypography-body1 textual">The Paris Climate Accord was a momentous accomplishment, uniting all the world's nations in an effort to tackle climate change. ClimateDataPool intends to unite the reporting of the nations on a blockchain. We're building a layered solution that will decentralize the data storage and streamline data sharing. </p>
 <p></p>
 <p></p>
+<h3 class="MuiTypography-h2 MuiTypography-root jss854 textual">User Stories</h3>
+<p class="MuiTypography-root jss855 MuiTypography-body1 textual">The demo is a walkthrough of <a href="https://github.com/chaine-io/climatedatapool/wiki/Stakeholder-Stories" class="textual">two user stories</a> in our Github wiki: Sam the civil servant, based in Singapore, and Reilly the researcher, who could be anywhere.</p>
+<p></p>
+<p></p>
 
-<h3 class="MuiTypography-h2 MuiTypography-root jss854 "><a class="noformat" href="files">User Stories</a></h3>
-<p class="MuiTypography-root jss855 MuiTypography-body1 textual">The demo is a walkthrough of two user stories: Sam the civil servant, based in Singapore, and Reilly the researcher, who could be anywhere. <a href="https://github.com/chaine-io/climatedatapool/wiki/Stakeholder-Stories" class="textual">Read the full stories</a> in our Github wiki.</p>
-<p></p>
-<p></p>
-<h2 class=""><a class="noformat" href="upload">Screens</a></h2>
+<h2 class="">Screens</h2>
 <p class="MuiTypography-root jss855 MuiTypography-body1 textual">The demo pages are supplemented by commands in a terminal:</p>
 <ul class="textual" style="margin-top:0"></a>
 <li><a href="https://github.com/chaine-io/climatedatapool/wiki/Stakeholder-Stories" class="textual">User Stories</a>
 <li><a href="overview.html" class="textual">Overview screen</a>
-<li><a href="upload.html" class="textual">Upload screen</a>
-<li>Terminal view
+<li><a href="upload.html" class="textual">Upload screen</a> followed by a Terminal view
 <li><a href="files.html" class="textual">Files screen</a>
 <li><a href="team.html" class="textual">Team</a>
 </ul>
 <p></p>
-<h3 class="MuiTypography-h2 MuiTypography-root jss854 "><a class="noformat" href="team">Completeness</a></h3>
-<p class="MuiTypography-root jss855 MuiTypography-body1 textual">Our team didn't have the resources to integrate the code with a website view. The web pages are dummy screens. But the underlying file handling with the Fleek API and display of query results on a website are realistic. Given a developer with backend skills, implementation would not be problematic.</p>
+<h3 class="MuiTypography-h2 MuiTypography-root jss854 textual">Implementation</h3>
+<p class="MuiTypography-root jss855 MuiTypography-body1 textual">For the PoC we’ve setup Fleek Storage and written scripts to access it from the command line. On the frontend we’ve mocked-up webpages for updating, viewing, and downloading the documents.</p>
+<p class="MuiTypography-root jss855 MuiTypography-body1 textual" style="margin-top:4px">As the next step, with the help of a full-stack engineer, we intend to develop and animate the end-to-end workflow. One important aspect of our vision is a middleware component that enables the provisioning of files to the frontend. Our goal is to build something that’s web-platform agnostic, i.e., it can cater to both web2 and web3 frontends or analytics solutions.</p>
 <p></p>
 <p></p>
-<h3 class="" style="">Thanks to ETHGlobal and the sponsors!</h3>
+<h4 class="textual" style="">Thanks to ETHGlobal and the sponsors!</h4>
 </div>
 </body>
 </html>
