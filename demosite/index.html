@@ -1920,6 +1920,9 @@ h4.textual {
   margin-top:1px;
   margin-bottom:1px;
 }
+ul.textual {
+  margin-top: 0;
+}
 p.textual {
   width: 600px;
   margin-bottom: 14px;
@@ -2069,7 +2072,7 @@ span.message {
 <p class="MuiTypography-root jss855 MuiTypography-body1 textual">The demo is a walkthrough of <a href="https://github.com/chaine-io/climatedatapool/wiki/Stakeholder-Stories" class="textual">two user stories</a> in our Github wiki: Sam the civil servant, based in Singapore, and Reilly the researcher, who could be anywhere.</p>
 <h2 class="">Screens</h2>
 <p class="MuiTypography-root jss855 MuiTypography-body1 textual" style="margin-bottom:0">The demo pages are supplemented by commands in a terminal:</p>
-<ul class="textual" style="margin-top:0"></a>
+<ul class="textual"></a>
 <li><a href="https://github.com/chaine-io/climatedatapool/wiki/Stakeholder-Stories" class="textual">User Stories</a>
 <li><a href="overview.html" class="textual">Overview screen</a>
 <li><a href="upload.html" class="textual">Upload screen</a> followed by a Terminal view
@@ -2077,9 +2080,11 @@ span.message {
 <li><a href="team.html" class="textual">Team</a>
 </ul>
 <h3 class="MuiTypography-h2 MuiTypography-root jss854 textual">Implementation</h3>
-<p class="MuiTypography-root jss855 MuiTypography-body1 textual lead">For the PoC we’ve setup Fleek Storage and written scripts to access it from the command line. On the frontend, we’ve mocked-up webpages for updating, viewing, and downloading the documents.</p>
+<p class="MuiTypography-root jss855 MuiTypography-body1 textual lead">For the PoC we’ve setup Fleek Storage and written scripts to access it from the command line. On the frontend, we’ve mocked-up webpages for managing, viewing, and downloading climate data documents.</p>
 <p class="MuiTypography-root jss855 MuiTypography-body1 textual">As the next step, with the help of a full-stack engineer, we intend to develop and animate the end-to-end workflow, including a middleware component that enables the provisioning of files to the frontend. Our goal is to build something that’s web-platform (web2/web3) agnostic to foster the transition to web3.</p>
 <h4 class="textual" style="">Thanks to ETHGlobal and the sponsors!</h4>
 </div>
+<!-- If Fleek is going to offer its platform as a white label service,
+  the CSS needs a total refactoring. OMG -->
 </body>
 </html>
